@@ -70,3 +70,17 @@ header nav ul li a {
     color: white;
     text-decoration: none;
 }
+.unstyled-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.unstyled-list li {
+    margin-bottom: 10px;
+}
+
+.unstyled-list li a {
+    text-decoration: none;
+    color: blue; /* Color dels enllaços, pots canviar-lo si ho desitges */
+}
