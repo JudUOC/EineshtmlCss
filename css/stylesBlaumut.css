@@ -1,0 +1,116 @@
+/* Estils generals */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../images/background_blaumut.jpeg);
+    background-size: cover;
+    color: white;
+    font-size: 15pt;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: scroll; 
+}
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estils específics per a la pàgina */
+.content {
+    padding: 20px;
+}
+
+.album-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.song-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estils per a la capçalera */
+.background {
+    background-image: url(../images/background_blaumut.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.footer-content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+table {
+    margin: 0 auto; /* Per centrar la taula horitzontalment */
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

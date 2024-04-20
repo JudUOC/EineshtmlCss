@@ -1,0 +1,72 @@
+body {
+    background-image: url('../images/background_index.jpeg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 15pt;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    overflow-y: scroll; 
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.no-bullets {
+    list-style-type: none; /* Eliminar els punts de la llista */
+}
+
+
+/* Estils per a dispositius grans com ordinadors */
+@media only screen and (min-width: 768px) {
+    body {
+        color: white; /* Color blanc per a dispositius grans */
+    }
+}
+
+/* Estils per a dispositius mitjans com tauletes */
+@media only screen and (max-width: 767px) {
+    body {
+        color: green; /* Color verd per a tauletes */
+    }
+}
+
+/* Estils per a dispositius petits com mòbils */
+@media only screen and (max-width: 480px) {
+    body {
+        color: pink; /* Color rosa per a mòbils */
+    }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
