@@ -15,13 +15,7 @@ function showSongList(albumId) {
         songLists.forEach(function(songList) {
             songList.style.display = "none";
         });
-        // Posiciona el menú emergent al centre del viewport
-        var viewportWidth = window.innerWidth;
-        var viewportHeight = window.innerHeight;
-        var songListWidth = songListToShow.offsetWidth;
-        var songListHeight = songListToShow.offsetHeight;
-        var topPosition = (viewportHeight - songListHeight) / 2 + window.scrollY;
-        var leftPosition = (viewportWidth - songListWidth) / 2 + window.scrollX;
+        // Posiciona el menú emergent esquerre del viewport
         topPosition = 100;
         leftPosition = 20;
         songListToShow.style.display = "block";
