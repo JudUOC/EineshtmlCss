@@ -1,52 +1,22 @@
+/* Estils generals */
 body {
-    background-image: url('../images/background_index.jpeg');
-    background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center; /* Centrar la imatge de fons */
+    background-repeat: no-repeat; /* Evitar que es repeteixi la imatge */
+
+    background-color: black;
+
     color: white;
     font-size: 15pt;
-    font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
     text-align: center;
-    overflow-y: scroll; 
-}
-
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-.no-bullets {
-    list-style-type: none; /* Eliminar els punts de la llista */
-}
-
-
-/* Estils per a dispositius grans com ordinadors */
-@media only screen and (min-width: 768px) {
-    body {
-        color: white; /* Color blanc per a dispositius grans */
-    }
-}
-
-/* Estils per a dispositius mitjans com tauletes */
-@media only screen and (max-width: 767px) {
-    body {
-        color: green; /* Color verd per a tauletes */
-    }
-}
-
-/* Estils per a dispositius petits com mòbils */
-@media only screen and (max-width: 480px) {
-    body {
-        color: pink; /* Color rosa per a mòbils */
-    }
+ 
+    height: auto;
+    width: auto;
 }
 
 header {
@@ -70,17 +40,277 @@ header nav ul li a {
     color: white;
     text-decoration: none;
 }
-.unstyled-list {
+
+nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-.unstyled-list li {
-    margin-bottom: 10px;
+nav ul li {
+    display: block;
+    margin-right: 20px;
 }
 
-.unstyled-list li a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: blue; /* Color dels enllaços, pots canviar-lo si ho desitges */
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: auto;
+}
+footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    padding: 10px;
+}
+
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%; /* Per fer el logotip rodó */
+}
+
+/* Estils per a la capçalera */
+.background {
+    background-image: url(../images/background_blaumut.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Estils per a h1 i h2 */
+h1 {
+    color: #09978b; /* Verd ultramarí */
+    margin: 0;
+    font-size: 60px;
+}
+h2 {
+    color: #09978b; /* Verd ultramarí */
+    margin: 0;
+    font-size: 30px;
+    font-style: italic;
+}
+.footer-content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    padding: 10px 0; /* Darrer valor declarat */
+}
+
+table {
+    width: 50%; /* Primera declaració */
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 0 auto; /* Per centrar la taula horitzontalment */
+}
+
+th {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    background-color: chocolate;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+/* Estils per a la fila de "Nova Gira 2024" */
+tr.new-tour {
+    background-color: #eaf7f7; /* Color de fons per destacar la fila de "Nova Gira 2024" */
+    font-weight: bold;
+    color: black;
+}
+.album-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.song-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.no-bullets {
+    list-style-type: none; /* Eliminar els punts de la llista */
+}
+
+.unstyled-list-centered {
+    list-style-type: none;
+    padding: 30;
+    margin: 0;
+    text-align: center; /* Centrar el contingut de la llista */
+}
+
+.unstyled-list-centered li {
+    margin-bottom: 10px; 
+}
+
+.unstyled-list-centered li a {
+    text-decoration: none;
+    color: #09978b; /* Color dels enllaços, pots canviar-lo si ho desitges */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+iframe {
+    display: block; /* Fer que l'iframe sigui un bloc per poder centrar-lo */
+    margin: auto; /* Centrar l'iframe horitzontalment */
+    max-width: 100%; /* Fer que l'iframe no superi mai l'ample del seu contenidor */
+}
+
+/* Estils per a dispositius grans com ordinadors */
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url('../images/background_blaumut.jpeg'); /* Canviar la imatge */
+        overflow-y: scroll;    }
+}
+
+/* Estils per a dispositius mitjans com tauletes */
+@media only screen and (max-width: 767px) {
+    body {         
+        background-image: url('../images/fons2.jpg'); /* Canviar la imatge */
+        overflow-y: scroll;
+    }
+}
+
+/* Estils per a dispositius petits com mòbils */
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: url('../images/fons1.jpg'); /* Canviar la imatge */
+        font-size: 15px;
+        overflow-y: scroll;
+    }
+
+    table {
+        width: 100%; /* Fer que la taula ocupi tot l'ample del seu contenidor */
+        overflow-x: auto; /* Afegir una barra de desplaçament horitzontal si la taula és massa gran */
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+        font-style: italic;    
+    }
+
+    iframe {
+        width: 100%; /* Fer que l'iframe ocupi tot l'ample disponible */
+    }
+    footer{
+        width: auto;
+    }
+}
+
+
+/* Animació */
+@keyframes moveTitle {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  /* Estils per al títol */
+  .animat-titol {
+    text-align: center;
+    margin-top: 50px;
+    animation: moveTitle 1s infinite; /* Animació de moviment */
+  }
+  
+  /* Animació activada quan es passa el ratolí per sobre */
+  .animat-titol:hover {
+    animation-play-state: paused; /* Pausa l'animació quan es passa el ratolí per sobre */
+  }
+
+
+  /* Estils per a la imatge tallada */
+.imatge-clip-path {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+
+  .containerSVG{
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Estils per a l'animació SVG */
+  .svg-animation {
+    margin: 0 auto;
+  }

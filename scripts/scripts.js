@@ -1,8 +1,13 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-  const audio = document.getElementById('audio');
-  audio.play();
-});
 
+const audio = document.getElementById('audio');
+
+window.addEventListener('click', async () => {
+  try {
+    await audio.play();
+  } catch (error) {
+    console.error('No s\'ha pogut reproduir l\'àudio:', error.message);
+  }
+});
 
 var lastClickedAlbumId = null;
 

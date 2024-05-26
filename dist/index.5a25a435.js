@@ -1,6 +1,10 @@
-window.addEventListener("DOMContentLoaded", (event)=>{
-    const audio = document.getElementById("audio");
-    audio.play();
+const audio = document.getElementById("audio");
+window.addEventListener("click", async ()=>{
+    try {
+        await audio.play();
+    } catch (error) {
+        console.error("No s'ha pogut reproduir l'\xe0udio:", error.message);
+    }
 });
 var lastClickedAlbumId = null;
 function showSongList(albumId) {
